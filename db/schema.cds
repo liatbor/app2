@@ -1,15 +1,17 @@
 namespace AppWithLogic;
 
-using {
-    Country ,
-    Currency ,
-    Language ,
-    User ,
-    cuid ,
-    extensible ,
-    managed ,
+using
+{
+    Country,
+    Currency,
+    Language,
+    User,
+    cuid,
+    extensible,
+    managed,
     temporal
-} from '@sap/cds/common';
+}
+from '@sap/cds/common';
 
 entity Employee
 {
@@ -24,4 +26,9 @@ entity Department
     key ID : UUID
         @Core.Computed;
     name : String(100);
+}
+
+entity Entity1
+{
+    key ID : UUID;
 }
